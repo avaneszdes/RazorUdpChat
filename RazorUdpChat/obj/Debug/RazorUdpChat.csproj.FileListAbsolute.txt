@@ -1,0 +1,17 @@
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.exe.config
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.exe
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.pdb
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csprojAssemblyReference.cache
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.Properties.Resources.resources
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.GenerateResource.cache
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CoreCompileInputs.cache
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.exe
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.pdb
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.Form1.resources
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CopyComplete
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.dll
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.dll
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.xml
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.xml
+C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.xml
