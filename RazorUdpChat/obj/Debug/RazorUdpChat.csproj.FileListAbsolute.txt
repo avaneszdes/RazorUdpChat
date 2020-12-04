@@ -15,3 +15,54 @@ C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.dl
 C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.xml
 C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.xml
 C:\Users\avane\RiderProjects\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csprojAssemblyReference.cache
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.Form1.resources
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.Properties.Resources.resources
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.GenerateResource.cache
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CoreCompileInputs.cache
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.exe
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.pdb
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.exe.config
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.exe
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.pdb
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.dll
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.dll
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.xml
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.xml
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Artem\Downloads\Telegram Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CopyComplete
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.exe.config
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.exe
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\RazorUdpChat.pdb
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.dll
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.dll
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.xml
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.xml
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csprojAssemblyReference.cache
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.Form1.resources
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.Properties.Resources.resources
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.GenerateResource.cache
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CoreCompileInputs.cache
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CopyComplete
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.exe
+C:\Users\avane\Desktop\RazorUdpChat\RazorUdpChat\obj\Debug\RazorUdpChat.pdb
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\RazorUdpChat.exe.config
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\RazorUdpChat.exe
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\RazorUdpChat.pdb
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\AForge.dll
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\AForge.Video.dll
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\AForge.xml
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\AForge.Video.xml
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.csprojAssemblyReference.cache
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.Form1.resources
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.Properties.Resources.resources
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.GenerateResource.cache
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CoreCompileInputs.cache
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.csproj.CopyComplete
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.exe
+C:\Users\avane\Desktop\RazorUdpChat - Copy\RazorUdpChat\obj\Debug\RazorUdpChat.pdb

@@ -4,15 +4,35 @@
     <projectFile>RazorUdpChat/RazorUdpChat.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5999d1f-4e02-4d48-b591-6b05cace643c" name="Default Changelist" comment="" />
+    <list default="true" id="a5999d1f-4e02-4d48-b591-6b05cace643c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorUdpChat/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorUdpChat/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RazorUdpChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RazorUdpChat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RazorUdpChat/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RazorUdpChat/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/.idea/.idea.RazorUdpChat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/.idea/.idea.RazorUdpChat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/TextMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/TextMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/VideoStream.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/VideoStream.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/bin/Debug/RazorUdpChat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/bin/Debug/RazorUdpChat.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/bin/Debug/RazorUdpChat.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/bin/Debug/RazorUdpChat.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/obj/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/obj/Debug/DesignTimeResolveAssemblyReferences.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/obj/Debug/RazorUdpChat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/obj/Debug/RazorUdpChat.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/obj/Debug/RazorUdpChat.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/RazorUdpChat/RazorUdpChat/obj/Debug/RazorUdpChat.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RazorUdpChat" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/869827A8-29D1-478E-B314-48676C61CBC2/a5/4aa1a374/NewFrameEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RazorUdpChat/MessageManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RazorUdpChat/Form1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/40B45F39-FACC-42DB-95D1-CED109AC01F1/16/02d998dd/VideoCaptureDevice.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RazorUdpChat/VideoStreamManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RazorUdpChat/TextBoxPadding.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/869827A8-29D1-478E-B314-48676C61CBC2/a5/4aa1a374/NewFrameEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -22,6 +42,8 @@
         <option value="$PROJECT_DIR$/RazorUdpChat/TextBoxPadding.cs" />
         <option value="$PROJECT_DIR$/RazorUdpChat/TextMessage.cs" />
         <option value="$PROJECT_DIR$/RazorUdpChat/VideoStream.cs" />
+        <option value="$PROJECT_DIR$/RazorUdpChat/VideoStreamManager.cs" />
+        <option value="$PROJECT_DIR$/RazorUdpChat/MessageManager.cs" />
         <option value="$PROJECT_DIR$/RazorUdpChat/Form1.cs" />
       </list>
     </option>
@@ -33,20 +55,23 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1ksyRvjaHFePZL21kngVQlMUzls" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.17513227" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.1010582" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.17497292" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.101300105" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.94848484" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="ReSharper" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="RazorUdpChat" type="DotNetProject" factoryName=".NET Project">
@@ -68,7 +93,10 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a5999d1f-4e02-4d48-b591-6b05cace643c" name="Default Changelist" comment="" />
@@ -82,13 +110,18 @@
       <workItem from="1606641035369" duration="4865000" />
       <workItem from="1606648887260" duration="35859000" />
       <workItem from="1606739883121" duration="14816000" />
-      <workItem from="1606757850092" duration="30107000" />
+      <workItem from="1606757850092" duration="34161000" />
+      <workItem from="1606841717783" duration="1104000" />
+      <workItem from="1606853488873" duration="56000" />
+      <workItem from="1606937263389" duration="3450000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -97,86 +130,94 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="858" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1606772278437" />
-    <state width="1921" height="158" key="GridCell.Tab.0.bottom" timestamp="1606823268802">
+    <state x="827" y="418" key="Github.ShareDialog" timestamp="1606823478710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="158" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606823268802" />
-    <state width="1921" height="158" key="GridCell.Tab.0.center" timestamp="1606823268801">
+    <state x="827" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606823478710" />
+    <state x="733" y="227" key="Github.UntrackedFilesDialog" timestamp="1606823493187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="158" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606823268801" />
-    <state width="1921" height="158" key="GridCell.Tab.0.left" timestamp="1606823268801">
+    <state x="733" y="227" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606823493187" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606948038609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="158" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606823268801" />
-    <state width="1921" height="158" key="GridCell.Tab.0.right" timestamp="1606823268802">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038609" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606948038608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="158" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606823268802" />
-    <state width="1921" height="212" key="GridCell.Tab.1.bottom" timestamp="1606782207028">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038608" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606948038608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207028" />
-    <state width="1921" height="212" key="GridCell.Tab.1.center" timestamp="1606782207028">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038608" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606948038609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207028" />
-    <state width="1921" height="212" key="GridCell.Tab.1.left" timestamp="1606782207027">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038609" />
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1606948038562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207027" />
-    <state width="1921" height="212" key="GridCell.Tab.1.right" timestamp="1606782207028">
+    <state width="1877" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038562" />
+    <state width="1877" height="375" key="GridCell.Tab.1.center" timestamp="1606948038562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207028" />
-    <state width="1921" height="212" key="GridCell.Tab.2.bottom" timestamp="1606782207029">
+    <state width="1877" height="375" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038562" />
+    <state width="1877" height="375" key="GridCell.Tab.1.left" timestamp="1606948038561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207029" />
-    <state width="1921" height="212" key="GridCell.Tab.2.center" timestamp="1606782207028">
+    <state width="1877" height="375" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038561" />
+    <state width="1877" height="375" key="GridCell.Tab.1.right" timestamp="1606948038562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207028" />
-    <state width="1921" height="212" key="GridCell.Tab.2.left" timestamp="1606782207028">
+    <state width="1877" height="375" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038562" />
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom" timestamp="1606948038563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207028" />
-    <state width="1921" height="212" key="GridCell.Tab.2.right" timestamp="1606782207028">
+    <state width="1877" height="375" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038563" />
+    <state width="1877" height="375" key="GridCell.Tab.2.center" timestamp="1606948038563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207028" />
-    <state width="1921" height="212" key="GridCell.Tab.3.bottom" timestamp="1606782207029">
+    <state width="1877" height="375" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038563" />
+    <state width="1877" height="375" key="GridCell.Tab.2.left" timestamp="1606948038562">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207029" />
-    <state width="1921" height="212" key="GridCell.Tab.3.center" timestamp="1606782207029">
+    <state width="1877" height="375" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038562" />
+    <state width="1877" height="375" key="GridCell.Tab.2.right" timestamp="1606948038563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207029" />
-    <state width="1921" height="212" key="GridCell.Tab.3.left" timestamp="1606782207029">
+    <state width="1877" height="375" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038563" />
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom" timestamp="1606948038566">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207029" />
-    <state width="1921" height="212" key="GridCell.Tab.3.right" timestamp="1606782207029">
+    <state width="1877" height="375" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038566" />
+    <state width="1877" height="375" key="GridCell.Tab.3.center" timestamp="1606948038564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207029" />
-    <state width="1921" height="212" key="GridCell.Tab.4.bottom" timestamp="1606782207030">
+    <state width="1877" height="375" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038564" />
+    <state width="1877" height="375" key="GridCell.Tab.3.left" timestamp="1606948038564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207030" />
-    <state width="1921" height="212" key="GridCell.Tab.4.center" timestamp="1606782207030">
+    <state width="1877" height="375" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038564" />
+    <state width="1877" height="375" key="GridCell.Tab.3.right" timestamp="1606948038564">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207030" />
-    <state width="1921" height="212" key="GridCell.Tab.4.left" timestamp="1606782207029">
+    <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038564" />
+    <state width="1877" height="375" key="GridCell.Tab.4.bottom" timestamp="1606948038567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207029" />
-    <state width="1921" height="212" key="GridCell.Tab.4.right" timestamp="1606782207030">
+    <state width="1877" height="375" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038567" />
+    <state width="1877" height="375" key="GridCell.Tab.4.center" timestamp="1606948038567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="212" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606782207030" />
+    <state width="1877" height="375" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038567" />
+    <state width="1877" height="375" key="GridCell.Tab.4.left" timestamp="1606948038566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038566" />
+    <state width="1877" height="375" key="GridCell.Tab.4.right" timestamp="1606948038567">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="375" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606948038567" />
     <state x="590" y="179" key="ToolboxManager" timestamp="1606662114445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,5 +238,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606736795017" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RazorUdpChat/Form1.cs</url>
+          <line>149</line>
+          <properties documentPath="$PROJECT_DIR$/RazorUdpChat/Form1.cs" initialLine="149">
+            <startOffsets>
+              <option value="5402" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5430" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

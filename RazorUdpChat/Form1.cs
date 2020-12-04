@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Net;
 using System.Net.Sockets;
 using System.Windows.Forms;
-using AForge.Video.DirectShow;
 
 namespace RazorUdpChat
 {
@@ -11,18 +10,11 @@ namespace RazorUdpChat
     {
         private ExTextBox sendTextBox = new ExTextBox();
         private TextBoxPadding _textBoxPadding = new TextBoxPadding();
-        private IPEndPoint _remoteIp = new IPEndPoint(IPAddress.Any, 0);
-        private UdpClient _senderVideoUDPClient = new UdpClient(),
-            _senderTextUDPClient = new UdpClient(),
-            _receiverVideoUDPClient,
-            _receiverTextUDPClient = null;
-        
         private Point _mouseOffset;
         private bool _isMouseDown = false;
-        private TextMessage _textMessageSender, _textMessageReceiver;
-        private VideoStream _videoStreamSender, _videoStreamReceiver;
-        FilterInfoCollection _videoDevices;
-        VideoCaptureDevice _videoSource;
+        private bool isPressVideoButton = false;
+        private MessageManager messageManager;
+        private VideoStreamManager videoStreamManager;
 
         public Form1()
         {
@@ -42,6 +34,7 @@ namespace RazorUdpChat
             sendTextBox.TabIndex = 1;
             _textBoxPadding.SetPadding(sendTextBox, new Padding(2, 8, 2, 2));
             chatTextBox.Font = new Font(FontFamily.GenericSansSerif, 12f);
+            videoButton.Enabled = false;
             Cursor = Cursors.Arrow;
             Width = 334;
             Height = 538;
@@ -66,11 +59,10 @@ namespace RazorUdpChat
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-        }
-
-        private void sendMessageButton_Click(object sender, EventArgs e)
-        {
-            _textMessageSender.SendMessage();
+            if (messageManager != null)
+            {
+                messageManager.Dispose();
+            }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
@@ -116,9 +108,20 @@ namespace RazorUdpChat
 
         #endregion
 
+        private void sendMessageButton_Click(object sender, EventArgs e)
+        {
+            chatTextBox.Text += $"Я: {sendTextBox.Text}  {DateTime.Now.Hour}:{DateTime.Now.Minute}\r\n"; ;
+            messageManager.SentTextMessage($"{changeNameTextBox.Text}: {sendTextBox.Text}");
+        }
 
-        private int _i = 0;
+        private IPEndPoint[] IncrementNumbersOfPorts(int incrementNumberForPort = 0)
+        {
+            IPEndPoint[] endpoints = { new IPEndPoint(IPAddress.Parse(GetLocalIPAddress()), int.Parse(changePortToReceiveTextBox.Text) + incrementNumberForPort),
+            new IPEndPoint(IPAddress.Parse(GetLocalIPAddress()), int.Parse(changePortToSendTextBox.Text) + incrementNumberForPort)};
 
+            return endpoints;
+        }
+        
         private void ConnectButtonClick(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(changePortToSendTextBox.Text) ||
@@ -128,60 +131,72 @@ namespace RazorUdpChat
                 return;
             }
 
-            if (_i % 2 == 0)
+            videoButton.Enabled = true;
+            dropDownPanel.Hide();
+            chatTextBox.Location = new Point(3, 32);
+            chatTextBox.Show();
+            sendTextBox.Location = new Point(3, Height - sendTextBox.Height - 2);
+            sendTextBox.Show();
+            sendMessageButton.Show();
+
+            var endpointsForMessages = IncrementNumbersOfPorts();
+            messageManager = new MessageManager(endpointsForMessages[0], endpointsForMessages[1]);
+            var endpointsForVideo = IncrementNumbersOfPorts(10);
+            videoStreamManager = new VideoStreamManager(endpointsForVideo[0], endpointsForVideo[1]);
+
+            messageManager.ListenMessageRecieve((string message) =>
             {
-                dropDownPanel.Hide();
-                chatTextBox.Location = new Point(3, 32);
-                chatTextBox.Show();
-                sendTextBox.Location = new Point(3, Height - sendTextBox.Height - 2);
-                sendTextBox.Show();
-                sendMessageButton.Show();
+                chatTextBox.Text += message;
+                Application.DoEvents();
+            });
 
-                _textMessageReceiver = new TextMessage(_receiverTextUDPClient,
-                    Int32.Parse(changePortToReceiveTextBox.Text), _remoteIp, chatTextBox);
-                _textMessageSender = new TextMessage(_senderTextUDPClient, changePortToSendTextBox, sendTextBox,
-                    changeNameTextBox, chatTextBox);
-                _videoStreamReceiver =
-                    new VideoStream(_receiverVideoUDPClient, changePortToReceiveTextBox, pictureBox1);
-                _videoStreamSender = new VideoStream(_videoDevices, _videoSource, _senderVideoUDPClient,
-                    changePortToSendTextBox);
-                _textMessageReceiver.ReceiveMessage();
-                _videoStreamReceiver.ReceiveVideo();
-                _i++;
-                return;
-            }
+            videoStreamManager.ListenVideoRecieve((Bitmap picture) =>
+            {
+                pictureBox1.Image = picture;
+            });
 
-            _senderTextUDPClient.Dispose();
-            _receiverTextUDPClient.Dispose();
-            _senderVideoUDPClient.Dispose();
-            _receiverVideoUDPClient.Dispose();
         }
-
         private void DropDownButton_Click(object sender, EventArgs e)
         {
             sendMessageButton.Enabled = true;
         }
-
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            _receiverVideoUDPClient.Dispose();
-            _receiverTextUDPClient.Dispose();
-            _senderTextUDPClient.Dispose();
-            _senderVideoUDPClient.Dispose();
+            if (videoStreamManager != null)
+            {
+                videoStreamManager.Dispose();
+                messageManager.Dispose();
+            }
+
             Application.Exit();
         }
-
-        private void VideoStreamButton_Click(object sender, EventArgs e)
+        private async void VideoStreamButton_Click(object sender, EventArgs e)
         {
-            if (Width == 334)
+            if (!isPressVideoButton)
             {
                 pictureBox1.Location = new Point(chatTextBox.Width + 6, 32);
-                Width = chatTextBox.Width + 3 + pictureBox1.Width + 6;
-                _videoStreamSender.SendPicture();
+                Width += 3 + pictureBox1.Width;
+                await videoStreamManager.SentPicturies();
+                isPressVideoButton = true;
                 return;
             }
-            
-            Width = 334;
+
+            videoStreamManager.Dispose();
+            Width -= 3 + pictureBox1.Width;
+            isPressVideoButton = false;
+        }
+
+        public static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
         }
     }
 }

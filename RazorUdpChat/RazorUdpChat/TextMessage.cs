@@ -48,7 +48,7 @@ namespace RazorUdpChat
                     while (true)
                     {
                         byte[] data = _receiver.Receive(ref _remoteIp);
-                        _chatTextBox.Text += Encoding.UTF8.GetString(data) + "\r\n";
+                        _chatTextBox.Text += Encoding.UTF8.GetString(data) + $"  {DateTime.Now.Hour}:{DateTime.Now.Minute}\r\n";
                     }
                 });
             }
@@ -74,7 +74,7 @@ namespace RazorUdpChat
 
             try
             {
-                _chatTextBox2.Text += $"Я: {_sendTextBox.Text}\r\n";
+                _chatTextBox2.Text += $"Я: {_sendTextBox.Text}  {DateTime.Now.Hour}:{DateTime.Now.Minute}\r\n";
                 byte[] data = Encoding.UTF8.GetBytes($"{_changeNameTextBox.Text}: {_sendTextBox.Text}");
                 _client.Send(data, data.Length, "127.0.0.1", Int32.Parse(_changePortToSendTextBox.Text));
             }

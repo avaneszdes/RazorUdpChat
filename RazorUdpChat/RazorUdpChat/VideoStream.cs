@@ -21,6 +21,7 @@ namespace RazorUdpChat
         private VideoCaptureDevice _videoSource;
         private UdpClient _senderVideoUDPClient;
         private TextBox _changePortToSendTextBox;
+
         public VideoStream(UdpClient receiverVideoUdpClient, TextBox changePortToReceiveTextBox, PictureBox pictureBox1)
         {
             _receiverVideoUdpClient = receiverVideoUdpClient;
@@ -39,28 +40,34 @@ namespace RazorUdpChat
 
         public void Dispose()
         {
+            _videoSource.Stop();
+            _videoSource.NewFrame -= VideoSource_NewFrame;
             _receiverVideoUdpClient.Dispose();
             _senderVideoUDPClient.Dispose();
         }
 
-        public async Task ReceiveVideo()
+        public void ReceiveVideo()
         {
             _receiverVideoUdpClient = new UdpClient(int.Parse(_changePortToReceiveTextBox.Text) + 20);
-            try
+
+            Task.Factory.StartNew(async () =>
             {
-                while (true)
+                try
                 {
-                    var data = await _receiverVideoUdpClient.ReceiveAsync();
-                    using (var ms = new MemoryStream(data.Buffer))
+                    while (true)
                     {
-                        _pictureBox1.Image = new Bitmap(ms);
+                        var data = await _receiverVideoUdpClient.ReceiveAsync();
+                        using (var ms = new MemoryStream(data.Buffer))
+                        {
+                            _pictureBox1.Image = new Bitmap(ms);
+                        }
                     }
                 }
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.ToString());
-            }
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.ToString());
+                }
+            });
         }
 
         public async void SendPicture()
@@ -85,21 +92,22 @@ namespace RazorUdpChat
 
         private void VideoSource_NewFrame(object sender, NewFrameEventArgs eventargs)
         {
-            var bmp = new Bitmap(eventargs.Frame);
+            var bmp = (Bitmap) eventargs.Frame.Clone();
             try
             {
                 using (var ms = new MemoryStream())
                 {
                     bmp.Save(ms, ImageFormat.Jpeg);
                     var bytes = ms.ToArray();
-                    _senderVideoUDPClient.Send(bytes, bytes.Length, Dns.GetHostEntry(Dns.GetHostName()).AddressList.
-                            FirstOrDefault(x => x.AddressFamily == AddressFamily.InterNetwork ).ToString(),
+                    _senderVideoUDPClient.Send(bytes, bytes.Length,
+                        Dns.GetHostEntry(Dns.GetHostName()).AddressList
+                            .FirstOrDefault(x => x.AddressFamily == AddressFamily.InterNetwork).ToString(),
                         int.Parse(_changePortToSendTextBox.Text) + 20);
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.ToString());   
+                MessageBox.Show(e.ToString());
             }
         }
     }

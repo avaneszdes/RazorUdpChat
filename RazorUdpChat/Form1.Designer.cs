@@ -44,11 +44,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.videoButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dropDownPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +73,7 @@
             this.dropDownButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.dropDownButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dropDownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dropDownButton.Image = ((System.Drawing.Image) (resources.GetObject("dropDownButton.Image")));
+            this.dropDownButton.Image = ((System.Drawing.Image)(resources.GetObject("dropDownButton.Image")));
             this.dropDownButton.Location = new System.Drawing.Point(3, 2);
             this.dropDownButton.Name = "dropDownButton";
             this.dropDownButton.Size = new System.Drawing.Size(25, 25);
@@ -132,7 +132,7 @@
             this.connectButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.connectButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.connectButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.connectButton.Image = ((System.Drawing.Image) (resources.GetObject("connectButton.Image")));
+            this.connectButton.Image = ((System.Drawing.Image)(resources.GetObject("connectButton.Image")));
             this.connectButton.Location = new System.Drawing.Point(8, 145);
             this.connectButton.Name = "connectButton";
             this.connectButton.Size = new System.Drawing.Size(119, 48);
@@ -152,7 +152,7 @@
             // 
             // sendMessageButton
             // 
-            this.sendMessageButton.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("sendMessageButton.BackgroundImage")));
+            this.sendMessageButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sendMessageButton.BackgroundImage")));
             this.sendMessageButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.sendMessageButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.sendMessageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,7 +165,7 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(889, -3);
@@ -176,7 +176,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button3.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
@@ -191,7 +191,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.BackgroundImage = ((System.Drawing.Image) (resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -203,23 +203,23 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.MinimizeButton_Click);
             // 
-            // button2
+            // videoButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image) (resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(106, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(33, 25);
-            this.button2.TabIndex = 8;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.VideoStreamButton_Click);
+            this.videoButton.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.videoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.videoButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.videoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.videoButton.Image = ((System.Drawing.Image)(resources.GetObject("videoButton.Image")));
+            this.videoButton.Location = new System.Drawing.Point(106, 2);
+            this.videoButton.Name = "videoButton";
+            this.videoButton.Size = new System.Drawing.Size(33, 25);
+            this.videoButton.TabIndex = 8;
+            this.videoButton.UseVisualStyleBackColor = false;
+            this.videoButton.Click += new System.EventHandler(this.VideoStreamButton_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(334, 31);
@@ -237,7 +237,7 @@
             this.ClientSize = new System.Drawing.Size(965, 538);
             this.Controls.Add(this.chatTextBox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.videoButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.sendMessageButton);
             this.Controls.Add(this.dropDownPanel);
@@ -255,16 +255,17 @@
             this.dropDownPanel.ResumeLayout(false);
             this.dropDownPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Button connectButton;
 
         private System.Windows.Forms.PictureBox pictureBox1;
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button videoButton;
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
